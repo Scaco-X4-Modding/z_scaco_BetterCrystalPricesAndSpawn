@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<!--Xenon rules-->
+	<replace
+		sel="//regions/rule[@fieldtype='asteroid'and @owner='xenon' and @maxsize='250']">
+		<rule fieldtype="asteroid" owner="xenon" hazardousregion="false"
+			chance="50" maxsize="250">
+			<select macro="env_ast_crystal_detail_s_01_macro" weight="30" />
+			<select macro="env_ast_crystal_detail_s_02_macro" weight="10" />
+			<select macro="env_ast_crystal_detail_s_03_macro" weight="5" />
+			<select macro="env_ast_crystal_detail_s_04_macro" weight="3" />
+			<select macro="env_ast_crystal_detail_s_05_macro" weight="1" />
+		</rule>
+	</replace>
+	<replace
+		sel="//regions/rule[@fieldtype='asteroid'and @owner='xenon' and @minsize='250']">
+		<rule fieldtype="asteroid" owner="xenon" hazardousregion="false"
+			chance="50" minsize="250">
+			<select macro="env_ast_crystal_detail_m_01_macro" weight="30" />
+			<select macro="env_ast_crystal_detail_m_02_macro" weight="10" />
+			<select macro="env_ast_crystal_detail_m_03_macro" weight="5" />
+			<select macro="env_ast_crystal_detail_m_04_macro" weight="3" />
+			<select macro="env_ast_crystal_detail_m_05_macro" weight="1" />
+		</rule>
+	</replace>
+
+	<!--Hazardous rules-->
+	<replace
+		sel="//regions/rule[@fieldtype='asteroid'and @hazardousregion='true' and @maxsize='250']">
+		<rule fieldtype="asteroid" hazardousregion="true" chance="50"
+			maxsize="250">
+			<select macro="env_ast_crystal_detail_s_01_macro" weight="30" />
+			<select macro="env_ast_crystal_detail_s_02_macro" weight="10" />
+			<select macro="env_ast_crystal_detail_s_03_macro" weight="5" />
+			<select macro="env_ast_crystal_detail_s_04_macro" weight="3" />
+			<select macro="env_ast_crystal_detail_s_05_macro" weight="3" />
+		</rule>
+	</replace>
+	<replace
+		sel="//regions/rule[@fieldtype='asteroid'and @hazardousregion='true' and @minsize='250']">
+		<rule fieldtype="asteroid" hazardousregion="true" chance="50"
+			minsize="250">
+			<select macro="env_ast_crystal_detail_m_01_macro" weight="30" />
+			<select macro="env_ast_crystal_detail_m_02_macro" weight="10" />
+			<select macro="env_ast_crystal_detail_m_03_macro" weight="5" />
+			<select macro="env_ast_crystal_detail_m_04_macro" weight="3" />
+			<select macro="env_ast_crystal_detail_m_05_macro" weight="3" />
+		</rule>
+	</replace>
+
+	<!--General rules-->
+	<replace
+		sel="//regions/rule[@fieldtype='asteroid'and @hazardousregion='false' and @maxsize='250'and not(@owner='xenon')]">
+		<rule fieldtype="asteroid" hazardousregion="false" chance="20"
+			maxsize="250">
+			<select macro="env_ast_crystal_detail_s_01_macro" weight="30" />
+			<select macro="env_ast_crystal_detail_s_02_macro" weight="10" />
+			<select macro="env_ast_crystal_detail_s_03_macro" weight="5" />
+			<select macro="env_ast_crystal_detail_s_04_macro" weight="3" />
+			<select macro="env_ast_crystal_detail_s_05_macro" weight="1" />
+		</rule>
+	</replace>
+	<replace
+		sel="//regions/rule[@fieldtype='asteroid'and @hazardousregion='false' and @minsize='250'and not(@owner='xenon')]">
+		<rule fieldtype="asteroid" hazardousregion="false" chance="20"
+			minsize="250">
+			<select macro="env_ast_crystal_detail_m_01_macro" weight="30" />
+			<select macro="env_ast_crystal_detail_m_02_macro" weight="10" />
+			<select macro="env_ast_crystal_detail_m_03_macro" weight="5" />
+			<select macro="env_ast_crystal_detail_m_04_macro" weight="3" />
+			<select macro="env_ast_crystal_detail_m_05_macro" weight="1" />
+		</rule>
+	</replace>
+
+</diff>

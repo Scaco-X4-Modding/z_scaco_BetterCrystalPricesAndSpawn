@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<diff>
+	<!-- Better Crystal Prices -->
+	<replace sel="/wares/ware[@id='inv_crystal_01']/price">
+		<price min="850" average="1000" max="1150" />
+	</replace>
+	<replace sel="/wares/ware[@id='inv_crystal_02']/price">
+		<price min="8500" average="10000" max="11500" />
+	</replace>
+	<replace sel="/wares/ware[@id='inv_crystal_03']/price">
+		<price min="22000" average="25000" max="28000" />
+	</replace>
+	<replace sel="/wares/ware[@id='inv_crystal_04']/price">
+		<price min="42555" average="50000" max="54500" />
+	</replace>
+	<replace sel="/wares/ware[@id='inv_crystal_05']/price">
+		<price min="200000" average="250000" max="300000" />
+	</replace>
+
+	<replace sel="/wares/ware[@id='satellite_mk2']/price">
+		<price min="4438" average="5221" max="6004" />
+	</replace>
+</diff>
